@@ -4,6 +4,33 @@
 while read var; do
 done < file.txt
 
+for i in {1..5}; do
+  echo $i
+done
+
+for i in 1 2 3 4 5; do
+  echo $i
+done
+
+for i in `cat file.txt`; do
+  echo $i
+done
+
+for (( i=0; i<=100; i++ )); do
+  echo $i
+  if [ $i -eq 2 ]; then
+    break
+  fi
+done
+
+# "$@" is all of the parameters passed to the script
+files="$@"
+for i in $files; do
+  if [ -f $i ]; then
+    echo $i " exist"
+  fi
+done
+
 # Get the second string separated by spaces.
 var1=$(echo $var | awk '{print $2}')
 
