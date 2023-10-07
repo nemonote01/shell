@@ -1,3 +1,4 @@
+```sh
 #!/bin/bash
 
 # Read every line from file
@@ -24,3 +25,4 @@ grep "str1" file.txt > newfile.txt
 
 # Delete a large folder
 rsync --delete-before -a -H -v --progress -stats ./blank/ ./dir_to_be_deleted/
+```
