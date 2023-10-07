@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ```shell
 # Read every line from file
 while read var; do
