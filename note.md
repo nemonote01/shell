@@ -1,5 +1,4 @@
-```sh
-#!/bin/bash
+```bash
 
 # Read every line from file
 while read var; do
