@@ -5,6 +5,8 @@
 # Read every line from file
 while read var; do
 done < file.txt
+until read var; do
+done < file.txt
 ```
 ## 1.2 for
 ```bash
